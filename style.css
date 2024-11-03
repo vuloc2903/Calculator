@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: space-between; /* Space out calculator and footer */
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  background-color: #f0f8ff; /* Light sky blue background */
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  height: 40vw;
+  text-align: center;
+  background-image: url('anime.jpg');
+  background-size: cover; /* Cover the entire calculator area */
+  background-position: center; /* Center the image */
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  margin-top: 20px; /* Add margin-top for spacing from top */
+}
+
+#display {
+  display: flex;
+  width: 20vw;
+  margin-top: -20px;
+  margin-bottom: 10px;
+  height: 5%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  color: #000; /* Black text */
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+  text-align: right;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 25vw;
+  height: 65%;
+}
+
+.buttons button {
+  display: flex;
+  width: 17%;
+  height: 17%;
+  margin: 3%;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px; /* Larger font size for buttons */
+  line-height: 1;
+  text-decoration: none;
+  border-radius: 50%;
+  font-weight: bold;
+  transition: 0.2s; /* Slightly slower transition */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.7); /* White button background with transparency */
+  color: #000; /* Black text */
+}
+
+.number-button {
+  background-color: rgba(173, 216, 230, 0.7); /* Light blue for number buttons */
+}
+
+.special-button {
+  background-color: rgba(255, 182, 193, 0.7); /* Light pink for special buttons */
+}
+
+.operation-button {
+  background-color: rgba(152, 251, 152, 0.7); /* Pale green for operation buttons */
+}
+
+#equal {
+  width: 40%;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%); /* Gradient for equal button */
+  border: none; /* No border */
+  color: #fff; /* White text */
+}
+
+.buttons button:hover {
+  transform: translateY(-2px); /* Hover effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  padding: 10px;
+  background-color: #f1f1f1;
+  text-align: center;
+  width: 100%;
+}
